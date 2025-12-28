@@ -1,4 +1,4 @@
-# Ultra-Level ToDo List
+# ToDo List
 
 A modern, feature-rich ToDo List web application with user authentication, advanced task management, and a sleek UI.
 
@@ -66,9 +66,6 @@ ToDoList/
 5. **Toggle Theme**: Click the moon/sun icon to switch themes.
 6. **Logout**: Securely log out when done.
 
-## Screenshots
-
-*(Add screenshots here if available)*
 
 ## Contributing
 
@@ -87,8 +84,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Author
 
 - **Rajaji V** - [GitHub](https://github.com/Rajaji-V)
-
----
-
-Enjoy organizing your tasks with Ultra-Level ToDo List! 🚀</content>
-<parameter name="filePath">d:\ToDoList\README.md
