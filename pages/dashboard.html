@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart ToDo Dashboard</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="container zoom-in">
+  <div class="container">
+    <header>
+      <h2 id="userGreeting"></h2>
+      <div class="actions">
+        <button onclick="toggleTheme()">🌗</button>
+        <button onclick="logout()">Logout</button>
+      </div>
+    </header>
+    
+    <div id="stats"></div>
+    
+    <div class="input-group">
+      <input type="text" id="taskInput" placeholder="What do you need to do?" />
+      <select id="prioritySelect">
+        <option value="Low">🟢 Low</option>
+        <option value="Medium">🟠 Medium</option>
+        <option value="High">🔴 High</option>
+      </select>
+      <select id="categorySelect">
+        <option value="Work">💼 Work</option>
+        <option value="Personal">🏠 Personal</option>
+        <option value="Health">🏥 Health</option>
+        <option value="Other">📝 Other</option>
+      </select>
+      <input type="date" id="dueDate" />
+      <button onclick="addTask()">➕ Add</button>
+    </div>
+  </div>
+    
+
+    <input type="text" id="searchInput" placeholder="Search tasks..." oninput="filterTasks()" />
+
+    <select id="sortSelect" onchange="sortTasks()">
+      <option value="none">Sort by...</option>
+      <option value="priority">Priority</option>
+      <option value="due">Due Date</option>
+      <option value="alpha">Alphabetical</option>
+    </select>
+
+    <ul id="taskList"></ul>
+  </div>
+  <script src="../js/script.js"></script>
+</body>
+</html>
